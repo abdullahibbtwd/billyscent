@@ -6,7 +6,7 @@ import React, { useContext, useEffect, useState } from "react";
 const OrderSummary = () => {
     const router = useRouter()
   const {  totalItems, totalPrice } = useContext(ProductContext)
-  const [selectedAddress, setSelectedAddress] = useState(null);
+  //const [selectedAddress, setSelectedAddress] = useState(null);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   const [userAddresses, setUserAddresses] = useState([]);
@@ -15,10 +15,10 @@ const OrderSummary = () => {
     setUserAddresses(addressDummyData);
   }
 
-  const handleAddressSelect = () => {
-    setSelectedAddress(userAddresses);
-    setIsDropdownOpen(false);
-  };
+  // const handleAddressSelect = () => {
+  //   setSelectedAddress(userAddresses);
+  //   setIsDropdownOpen(false);
+  // };
 
   const createOrder = async () => {
 

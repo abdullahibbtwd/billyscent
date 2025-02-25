@@ -3,7 +3,7 @@ import React from 'react'
 import { useRouter } from 'next/navigation';
 import { assets } from '@/app/assets/assets'
 import Image from 'next/image';
-import { Product } from '@/app/data';
+
 
 
 
